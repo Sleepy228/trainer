@@ -1,0 +1,37 @@
+{% extends "tempdashboard.html" %}
+{% block title %} моўны трэнажор {% endblock title %}
+{% block content %}
+{% load static %}
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url({% static 'dashboard/img/home-bg.jpg' %}")>
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h1>Чысты блог</h1>
+            <span class="subheading">Пры супрацоўніцтве з настаўнікам ААП</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="post-preview">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/mqlpV_eJJao" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h2 class="post-title">
+              Увага
+            </h2>
+            <h3 class="post-subtitle">
+              Калі-небудзь тут будзе кантэнт
+            </h3>
+        </div>
+        {% endblock content %}
+       {% block script %}
+       <script src="{% static 'dashboard/js/main.js' %}"> </script>
+       {% endblock script %}
+      
