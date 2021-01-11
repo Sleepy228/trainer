@@ -5,7 +5,7 @@
  */
 
 body {
-  font-family: 'Lato';
+  font-family: 'Comfortaa';
 }
 
 h1,
@@ -14,7 +14,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Catamaran';
+  font-family: 'Istok Web';
   font-weight: 800 !important;
 }
 
@@ -134,6 +134,11 @@ header.masthead .bg-circle-4 {
 .btn-primary {
   background-color: #ee0979;
   border-color: #ee0979;
+}
+
+.btn-confirm {
+  background-color: #9999FF;
+  border-color: #9999FF;
 }
 
 .btn-primary:active, .btn-primary:focus, .btn-primary:hover {

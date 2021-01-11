@@ -21,20 +21,15 @@ urlpatterns = [
 ]
 
 from django.urls import include
+from django.contrib.auth import views as auth_view
 urlpatterns += [
      path('trainer/', include('trainer.urls')),
      path('account/', include('account.urls')),
-     path('', include("django.contrib.auth.urls")),
+     path('summernote/', include('django_summernote.urls')),
 ]
-#urlpatterns += [
-    # path('dashboard/', include('trainer.urls')),
-#]
 
-#from django.views.generic import RedirectView
-#urlpatterns += [
-#    path('', RedirectView.as_view(url='/trainer/', permanent=True)),
-#]
 from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
